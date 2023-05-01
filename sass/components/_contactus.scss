@@ -1,0 +1,32 @@
+.contactus {
+  background: $color-background-main;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.contactus__container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  @include media-small-tablet {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
+.contactus__body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.contactus__button {
+  background: $color-primery;
+  color: $color-text-light;
+  padding: 5px 40px;
+  min-height: 58px;
+  @extend %transition;
+  border-radius: 5px;
+  border: 1px solid $color-primery;
+  &:hover {
+    background: $color-text-light;
+    color: $color-primery;
+  }
+}

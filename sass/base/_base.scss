@@ -1,0 +1,14 @@
+html {
+  font-size: 10px;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1;
+  @extend %font-main;
+  font-size: 1.4rem;
+  color: $color-text-main;
+  background: $color-background-main;
+}

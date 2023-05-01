@@ -1,0 +1,25 @@
+
+.layout-3-column {
+  gap: 30px;
+  @include columns($width:31%);
+  // @media (max-width:992px) {
+  //     @include columns($width:45%);
+  //     // justify-content: center;
+  //   }
+  // @media (max-width:670px) {
+  //     @include columns($width:100%);
+  //   }
+  @include media-big-tablet {
+    justify-content: center;
+  }
+  @include media-small-tablet {
+      gap: 20px;
+    }
+}
+.layout-4-column {
+  gap: 30px;
+  @include columns($width:23%);
+  @include media-small-tablet {
+    gap: 20px;
+  }
+}

@@ -1,0 +1,89 @@
+.getin {
+  background: $color-background-add;
+  padding-top: 80px;
+  padding-bottom: 136px;
+  @include media-big-tablet {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+  @include media-small-tablet {
+    padding-bottom: 30px;
+  }
+}
+.getin__header {
+  margin-bottom: 80px;
+  @include media-small-tablet {
+    margin-bottom: 40px;
+  }
+}
+.getin__items {
+  margin: 0 -15px;
+}
+@media (min-width: 992px) {
+  .getin__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+}
+.getin__item {
+  flex: 0 1 33.333%;
+}
+.item-getin {
+  background: $color-background-light;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+  // max-width: 328px;
+  padding: 50px 50px;
+}
+.item-getin_dark {
+  background: $color-background-dark;
+  padding: 80px 40px;
+  .item-getin__button{
+    border: 1px solid $color-text-light;
+    color: $color-text-light;
+    background: $color-background-dark;
+  }
+  .item-getin__email {
+    color: $color-text-light;
+  }
+  .item-getin__label {
+    color: $color-text-light;
+  }
+}
+.item-getin__icon {
+  display: inline-block;
+}
+.item-getin__emails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.item-getin__email {
+  @include font($size: 1.4rem,
+  $height: 150%,$weight:600,$style:normal,$spacing:0.2px,
+  $color: $color-text-headers);
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.item-getin__label {
+  color: $color-text-headers;
+}
+.item-getin__button {
+  background: $color-background-light;
+  min-height: 44px;
+  padding: 5px 20px;
+  border: 1px solid $color-primery;
+  border-radius: 5px;
+  color: $color-primery;
+  @extend %transition;
+  &:hover {
+    color: $color-background-input;
+    background: $color-primery;
+  }
+}

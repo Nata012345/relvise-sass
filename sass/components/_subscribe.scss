@@ -1,0 +1,60 @@
+.subscribe__body {
+  position: relative;
+  z-index: 2;
+  margin:  0px 32px;
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-between;
+  padding: 30px 50px;
+  border-radius: 2px;
+  background: $color-background-dark;
+  @include media-big-tablet {
+    margin:  0px -15px;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px 15px;
+  }
+}
+.subscribe__body::after {
+  height: 77px;
+}
+.subscribe__title {
+  color: $color-text-light;
+  max-width: 266px;
+  @include media-big-tablet {
+    max-width: none;
+  }
+}
+.subscribe__form {
+  display: inline-flex;
+  align-items: center;
+}
+.subscribe__input {
+  width: 100%;
+  min-height: 58px;
+  border: 1px solid #E6E6E6;
+  border-radius: 5px 0px 0px 5px;
+  min-width: 333px;
+  padding: 0 20px;
+  background: $color-background-input;
+  :focus {
+    color: $color-text-headers;
+  }
+  @include media-big-tablet {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}
+.subscribe__button {
+  background: $color-primery;
+  padding: 0px 22px;
+  min-height: 58px;
+  border: 1px solid #E6E6E6;
+  border-radius: 0px 5px 5px 0px;
+  @extend %transition;
+  &:hover {
+    background: $color-background-input;
+    color:$color-primery;
+    border: 1px solid $color-primery;
+  }
+}

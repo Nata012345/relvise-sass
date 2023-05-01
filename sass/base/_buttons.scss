@@ -1,0 +1,7 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  @include font($size: 1.4rem,$height: 142%,$weight:700,$style:normal,$spacing:0.2px,$color:$color-text-light);
+}

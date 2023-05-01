@@ -1,0 +1,33 @@
+h1 {
+  @include font($size: 5.8rem,
+  $height:138%,$weight:800,$style:normal,$spacing:0.2px,$color:$color-text-headers);
+  @include media-big-mobile {
+    font-size: 4.2rem;
+  }
+}
+h2 {
+  @include font($size: 4rem,$height: 143%,$weight:700,$style:normal,$spacing:0.2px,$color:$color-text-headers);
+  @include media-big-tablet {
+    font-size: 3.5rem;
+  }
+  @include media-small-tablet {
+    font-size: 3rem;
+  }
+}
+h3 {
+  @include font($size: 2.4rem,$height: 133%,$weight:700,$style:normal,$spacing:0.1px,$color:$color-text-headers);
+}
+h4 {
+  @include font($size: 2rem,$height: 150%,$weight:500,$style:normal,$spacing:0.2px,$color:$color-text-main);
+}
+h5 {
+  @include font($size: 1.6rem,$height: 150%,$weight:700,$style:normal,$spacing:0.1px,$color:$color-text-main);
+}
+h6 {
+  @include font($size: 1.4rem,$height: 171%,$weight:600,$style:normal,$spacing:0.2px,$color:$color-text-main);
+}
+p {
+  @include font($size: 1.4rem,$height: 143%,$weight:500,$style:normal,$spacing:0.2px,$color:$color-text-main);
+}
+
+

@@ -1,0 +1,11 @@
+.wrap {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper {
+  max-width: $content-width;
+  padding: 0 15px;
+  margin: 0 auto;
+}
